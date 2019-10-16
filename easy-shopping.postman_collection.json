@@ -1,0 +1,126 @@
+{
+	"variables": [],
+	"info": {
+		"name": "easy-shopping",
+		"_postman_id": "d2eef614-b4c5-fdce-6600-944f46cc83a5",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getItemById",
+			"request": {
+				"url": "http://localhost:8888/api/cart/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "createItem",
+			"request": {
+				"url": "http://localhost:8888/api/cart",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"computer\", \"quantity\": 1, \"totalPrice\": 4000}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getAllItems",
+			"request": {
+				"url": "http://localhost:8888/api/cart",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "placeOrder",
+			"request": {
+				"url": "http://localhost:8888/api/order",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"mobile\", \"emailId\": \"xyz@gmail.com\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getOrders",
+			"request": {
+				"url": "http://localhost:8888/api/order",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "updateItem",
+			"request": {
+				"url": "http://localhost:8888/api/cart/3",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"book\", \"quantity\": 1, \"totalPrice\": 50}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "deleteItemById",
+			"request": {
+				"url": "http://localhost:8888/api/cart/5",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "deleteItem",
+			"request": {
+				"url": "http://localhost:8888/api/cart",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
