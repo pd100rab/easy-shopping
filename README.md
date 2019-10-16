@@ -1,3 +1,5 @@
+#easy-shopping
+
 This project contains working functionality of a shopping cart allowing user to add, update and delete products in the cart. It also provide facility to user to place order and fetch the details, considering some of the exceptions that may occur during the whole process such as ResourceNotFoundException, OutOfStockException and ItemCannotUpdateException.
 
 Features
