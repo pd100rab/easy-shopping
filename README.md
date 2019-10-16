@@ -16,7 +16,8 @@ User need to first add items into the cart. User can modify the cart as per requ
 
 Steps to run:
 -The code is available on Github: https://github.com/pd100rab/easy-shopping
--Please execute the DB queries as specified below
+-Create the database naming "mydb" in MySql DB (Please refer to the application.properties file for more details)
+-Execute the DB queries as specified below
 -Run the spring boot application
 -The APIs/Endpoints are present inside easy-shopping.postman_collection.json file. Please import it into any rest client like Postman.
 
