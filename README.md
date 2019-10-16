@@ -5,10 +5,18 @@ Features
 -Build the spring boot project which is interacting with the MySql DB
 -Smoothly haandled the exception
 
+Technical Description and Workflow:
+This project contains 3 entities - Stock, Cart and Order.
+Stock - It is like a warehouse which contains all information of the products
+Cart - User specific collection of products
+Order - Details of products purchased by user
+User need to first add items into the cart. User can modify the cart as per requirement. Then finally user can place the order. During the complete process, user can get any of the 3 exceptions - ResourceNotFoundException, OutOfStockException and ItemCannotUpdateException.
+
 Steps to run:
 -The code is available on Github: https://github.com/pd100rab/easy-shopping
--Please create the tables as specified below
+-Please execute the DB queries as specified below
 -Run the spring boot application
+-The APIs/Endpoints are present inside easy-shopping.postman_collection.json file. Please import it into any rest client like Postman.
 
 DB queries:
 Create tables stock, order
