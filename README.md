@@ -5,7 +5,7 @@ This project contains working functionality of a shopping cart allowing user to 
 Features
 -Implemented Oops concept
 -Build the spring boot project which is interacting with the MySql DB
--Smoothly haandled the exception
+-Smoothly handled the exception
 
 Technical Description and Workflow:
 This project contains 3 entities - Stock, Cart and Order.
